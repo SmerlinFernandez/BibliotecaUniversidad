@@ -1,0 +1,47 @@
+﻿@model BibliotecaUniversidad.Data.Usuario
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <div class="imgcontainer">
+
+                <img src="oymlogo.png" />
+
+            </div>
+
+            <div class="container">
+
+                <label class="lbl" for="username">Usuario</label>
+                <input type="text" placeholder="Ingrese su usuario" name="username" required />
+
+                <label class="lbl" for="password">Contraseña</label>
+                <input type="text" placeholder="Ingrese su contraseña" name="password" required />
+
+                <button type="submit" class="isesion">Iniciar Sesión</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">
+                    Recuerdame
+                </label>
+
+            </div>
+
+            <div class="olv">
+                <a href="#">Olvidó su contraseña?</a>
+            </div>
+
+        }
+    </div>
+</body>
+</html>
